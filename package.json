@@ -1,0 +1,47 @@
+{
+  "name": "pluto-planet",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitive words.",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvi0049/pluto.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "pluto",
+    "planet",
+    "pluto-planet"
+  ],
+  "author": "Yuvraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuvi0049/pluto/issues"
+  },
+  "homepage": "https://github.com/yuvi0049/pluto#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^23.4.2",
+    "np": "^3.0.4",
+    "watch": "^1.0.2"
+  }
+}
